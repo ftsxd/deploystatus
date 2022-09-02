@@ -41,7 +41,7 @@ func (c *TaskController) Query() {
 	c.Ctx.WriteString("access")
 }
 
-// 删除
+// 查看集群状态
 func (c *TaskController) Deployhealth() {
 	aa := deploymentStatus.Testdeploy("default")
 	fmt.Println(aa)
